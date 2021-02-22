@@ -1,71 +1,3 @@
-// Intro Animation --------------------------------------
-function introAnimation() {
-  var tl = anime.timeline({
-    easing: 'easeOutExpo',
-    duration: 2500
-  });
-  
-  // Add children
-  tl
-  .add({
-    targets: '.text',
-    translateY: ['100%', '0%']
-  })
-  .add({
-    targets: '.slider',
-    translateY: ['100%', '-120%'],
-  })
-  .add({
-    targets: '.intro-ani',
-    translateY: ['0%', '-120%']
-  }, 2700)
-  .add({
-    targets: 'nav',
-    translateX: ['-100%', '0%']
-  }, 4300)
-  .add({
-    targets: '.intro-wrap',
-    opacity: [0, 1]
-  }, 4500);
-}
-
-
-// Form animation ----------------------------------
-
-/* document.querySelector('body').addEventListener('mousemove', squareMove);
-
-function squareMove(){
-  let square = document.querySelectorAll('.form-square');
-  square.forEach(function(square){
-    let x = (square.getBoundingClientRect().left) + (square.clientWidth / 2);
-    let y = (square.getBoundingClientRect().right) + (square.clientHeight / 2);
-    let radian = Math.atan2(target.pageX - x , target.pageY - y);
-    let rot = (radian * (180 / Math.PI) * -1) + 270;
-    square.style.transform = "rotate(" + rot + "deg)";
-  });
-} */
-
-let path = anime.path("#form-path path");
-anime({
-  targets: '.form-square',
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  delay: anime.stagger(500),
-  rotate: '1turn',
-  easing: 'linear',
-  duration: 10500,
-  loop: true
-});
-
-
-/* document.querySelector('#contact-form').addEventListener('focus', function(e){
-  anime({
-    tagerts: '.form-morph',
-    strokeDashoffset: [anime.setDashoffset, 0]
-  });
-}); */
-
 // T-bot modal and Slider --------------------------------------------
 
 var tmodal = document.getElementById("t-botModal");
@@ -111,11 +43,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// CSM Modal & Slider ------------------------------------------
+// gym Modal & Slider ------------------------------------------
 
-var cmodal = document.getElementById("csmModal");
-var cbtn = document.getElementById("csmBtn");
-var cspan = document.getElementsByClassName("csm-close")[0];
+var cmodal = document.getElementById("gymModal");
+var cbtn = document.getElementById("gymBtn");
+var cspan = document.getElementsByClassName("gym-close")[0];
 
 // Get the modal
 
@@ -129,28 +61,21 @@ cspan.onclick = function() {
   cmodal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-/* window.onclick = function(event) {
-  if (event.target == cmodal) {
-    cmodal.style.display = "none";
-  }
-} */
-
 var cslideIndex = 1;
-showSlidesC(cslideIndex);
+showSlidesG(cslideIndex);
 
-function plusSlidesC(n) {
-  showSlidesC(cslideIndex += n);
+function plusSlidesG(n) {
+  showSlidesG(cslideIndex += n);
 }
 
-function currentSlideC(n) {
-  showSlidesC(cslideIndex = n);
+function currentSlideG(n) {
+  showSlidesG(cslideIndex = n);
 }
 
-function showSlidesC(n) {
+function showSlidesG(n) {
   var i;
-  var slides = document.getElementsByClassName("csmSlides");
-  var dots = document.getElementsByClassName("csm-dot");
+  var slides = document.getElementsByClassName("gymSlides");
+  var dots = document.getElementsByClassName("gym-dot");
   if (n > slides.length) {cslideIndex = 1}
     if (n < 1) {cslideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -163,63 +88,11 @@ function showSlidesC(n) {
   dots[cslideIndex-1].className += " active";
 }
 
-// ITTC Modal & Slider ------------------------------------------
+// moto Modal & Slider ------------------------------------------
 
-var imodal = document.getElementById("ittcModal");
-var ibtn = document.getElementById("ittcBtn");
-var ispan = document.getElementsByClassName("ittc-close")[0];
-
-// Get the modal
-
-// When the user clicks on the button, open the modal
-ibtn.onclick = function() {
-  imodal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-ispan.onclick = function() {
-  imodal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-/* window.onclick = function(event) {
-  if (event.target == imodal) {
-    imodal.style.display = "none";
-  }
-} */
-
-var islideIndex = 1;
-showSlidesI(islideIndex);
-
-function plusSlidesI(n) {
-  showSlidesI(islideIndex += n);
-}
-
-function currentSlideI(n) {
-  showSlidesI(islideIndex = n);
-}
-
-function showSlidesI(n) {
-  var i;
-  var slides = document.getElementsByClassName("ittcSlides");
-  var dots = document.getElementsByClassName("ittc-dot");
-  if (n > slides.length) {islideIndex = 1}
-    if (n < 1) {islideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[islideIndex-1].style.display = "block";
-  dots[islideIndex-1].className += " active";
-}
-
-// Invaders Modal & Slider ------------------------------------------
-
-var simodal = document.getElementById("invadersModal");
-var sibtn = document.getElementById("invadersBtn");
-var sispan = document.getElementsByClassName("invaders-close")[0];
+var simodal = document.getElementById("motoModal");
+var sibtn = document.getElementById("motoBtn");
+var sispan = document.getElementsByClassName("moto-close")[0];
 
 // Get the modal
 
@@ -233,28 +106,22 @@ sispan.onclick = function() {
   simodal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
-/* window.onclick = function(event) {
-  if (event.target == simodal) {
-    simodal.style.display = "none";
-  }
-} */
 
 var sislideIndex = 1;
-showSlidesSi(sislideIndex);
+showSlidesM(sislideIndex);
 
-function plusSlidesSi(n) {
-  showSlidesSi(sislideIndex += n);
+function plusSlidesM(n) {
+  showSlidesM(sislideIndex += n);
 }
 
-function currentSlideSi(n) {
-  showSlidesSi(sislideIndex = n);
+function currentSlideM(n) {
+  showSlidesM(sislideIndex = n);
 }
 
-function showSlidesSi(n) {
+function showSlidesM(n) {
   var i;
-  var slides = document.getElementsByClassName("invadersSlides");
-  var dots = document.getElementsByClassName("invaders-dot");
+  var slides = document.getElementsByClassName("motoSlides");
+  var dots = document.getElementsByClassName("moto-dot");
   if (n > slides.length) {sislideIndex = 1}
     if (n < 1) {sislideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -267,11 +134,11 @@ function showSlidesSi(n) {
   dots[sislideIndex-1].className += " active";
 }
 
-// Etnias Modal & Slider ------------------------------------------
+// Events Modal & Slider ------------------------------------------
 
-var emodal = document.getElementById("etniasModal");
-var ebtn = document.getElementById("etniasBtn");
-var espan = document.getElementsByClassName("etnias-close")[0];
+var emodal = document.getElementById("eventsModal");
+var ebtn = document.getElementById("eventsBtn");
+var espan = document.getElementsByClassName("events-close")[0];
 
 // Get the modal
 
@@ -284,13 +151,6 @@ ebtn.onclick = function() {
 espan.onclick = function() {
   emodal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
-/* window.onclick = function(event) {
-  if (event.target == emodal) {
-    emodal.style.display = "none";
-  }
-} */
 
 var eslideIndex = 1;
 showSlidesE(eslideIndex);
@@ -305,8 +165,8 @@ function currentSlideE(n) {
 
 function showSlidesE(n) {
   var i;
-  var slides = document.getElementsByClassName("etniasSlides");
-  var dots = document.getElementsByClassName("etnias-dot");
+  var slides = document.getElementsByClassName("eventsSlides");
+  var dots = document.getElementsByClassName("events-dot");
   if (n > slides.length) {eslideIndex = 1}
     if (n < 1) {eslideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
@@ -319,22 +179,94 @@ function showSlidesE(n) {
   dots[eslideIndex-1].className += " active";
 }
 
-// Vianda Modal & Slider ------------------------------------------
+// Tic Modal & Slider ------------------------------------------
 
-var vmodal = document.getElementById("viandaModal");
-var vbtn = document.getElementById("viandaBtn");
-var vspan = document.getElementsByClassName("vianda-close")[0];
+var amodal = document.getElementById("ticModal");
+var abtn = document.getElementById("ticBtn");
+var aspan = document.getElementsByClassName("tic-close")[0];
 
 // Get the modal
 
 // When the user clicks on the button, open the modal
-vbtn.onclick = function() {
-  vmodal.style.display = "block";
+abtn.onclick = function() {
+  amodal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-vspan.onclick = function() {
-  vmodal.style.display = "none";
+aspan.onclick = function() {
+  amodal.style.display = "none";
+}
+
+var aslideIndex = 1;
+showSlidesA(aslideIndex);
+
+function plusSlidesA(n) {
+  showSlidesA(aslideIndex += n);
+}
+
+function currentSlideA(n) {
+  showSlidesA(aslideIndex = n);
+}
+
+function showSlidesA(n) {
+  var i;
+  var slides = document.getElementsByClassName("ticSlides");
+  var dots = document.getElementsByClassName("tic-dot");
+  if (n > slides.length) {aslideIndex = 1}
+    if (n < 1) {aslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[aslideIndex-1].style.display = "block";
+  dots[aslideIndex-1].className += " active";
+}
+
+// Maga Modal & Slider ------------------------------------------
+
+var gmodal = document.getElementById("magaModal");
+var gbtn = document.getElementById("magaBtn");
+var gspan = document.getElementsByClassName("maga-close")[0];
+
+// Get the modal
+
+// When the user clicks on the button, open the modal
+gbtn.onclick = function() {
+  gmodal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+gspan.onclick = function() {
+  gmodal.style.display = "none";
+}
+
+var gslideIndex = 1;
+showSlidesMA(gslideIndex);
+
+function plusSlidesMA(n) {
+  showSlidesMA(gslideIndex += n);
+}
+
+function currentSlideMA(n) {
+  showSlidesMA(gslideIndex = n);
+}
+
+function showSlidesMA(n) {
+  var i;
+  var slides = document.getElementsByClassName("magaSlides");
+  var dots = document.getElementsByClassName("maga-dot");
+  if (n > slides.length) {gslideIndex = 1}
+    if (n < 1) {gslideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+  slides[gslideIndex-1].style.display = "block";
+  dots[gslideIndex-1].className += " active";
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -343,40 +275,13 @@ window.onclick = function(event) {
     tmodal.style.display = "none";
   } else if (event.target == cmodal){
     cmodal.style.display = "none";
-  } else if (event.target == imodal) {
-    imodal.style.display = "none";
   } else if (event.target == simodal) {
     simodal.style.display = "none";
   } else if (event.target == emodal) {
     emodal.style.display = "none";
-  } else if (event.target == vmodal) {
-    vmodal.style.display = "none";
+  } else if (event.target == ticmodal) {
+    ticmodal.style.display = "none";
+  } else if (event.target == magamodal) {
+    magamodal.style.display = "none";
   }
-}
-
-var vslideIndex = 1;
-showSlidesV(vslideIndex);
-
-function plusSlidesV(n) {
-  showSlidesV(vslideIndex += n);
-}
-
-function currentSlideV(n) {
-  showSlidesV(vslideIndex = n);
-}
-
-function showSlidesV(n) {
-  var i;
-  var slides = document.getElementsByClassName("viandaSlides");
-  var dots = document.getElementsByClassName("vianda-dot");
-  if (n > slides.length) {eslideIndex = 1}
-    if (n < 1) {vslideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-  slides[vslideIndex-1].style.display = "block";
-  dots[vslideIndex-1].className += " active";
 }
