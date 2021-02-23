@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/Assets/IMG/back.jpg);
+  background-image: url(../Assets/IMG/back.jpg);
   background-color: black;
 }
 
