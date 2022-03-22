@@ -1,0 +1,1256 @@
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/Assets/IMG/back.jpg);
+  background-color: black;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media only screen and (max-width: 690px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  main {
+    width: 100%;
+  }
+}
+
+section {
+  width: 83%;
+}
+
+@media only screen and (max-width: 690px) {
+  section {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  section {
+    width: 100%;
+  }
+}
+
+footer {
+  width: 83%;
+  margin-left: 17%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: white;
+  background-image: url(/Assets/IMG/image-fo.jpg);
+  padding: 0.5rem 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #39ff14;
+}
+
+@media only screen and (max-width: 690px) {
+  footer {
+    font-size: 0.6rem;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  footer {
+    width: 100%;
+    margin: 0;
+  }
+  footer a {
+    font-size: 0.9rem;
+  }
+}
+
+nav {
+  padding: 3rem;
+  width: 18%;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+}
+
+nav img {
+  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ff1437;
+  margin: 1rem 0;
+  font-size: 2rem;
+  font-family: "Reggae One", cursive;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #39ff14;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 690px) {
+  nav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ff1437;
+    z-index: 3;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  nav a {
+    margin: 0;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  nav {
+    height: 80px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ff1437;
+    z-index: 3;
+  }
+  nav img {
+    width: 60px;
+    height: 70px;
+    border: solid 1px #39ff14;
+  }
+  nav a {
+    margin: 0;
+    font-size: 1rem;
+    color: whitesmoke;
+  }
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media only screen and (max-width: 690px) {
+  .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1440px) {
+  .d-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+}
+
+.d-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.main-header {
+  font-family: "Reggae One", cursive;
+  font-size: 4rem;
+  color: #39ff14;
+  margin: 1rem 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media only screen and (max-width: 690px) {
+  .main-header {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .main-header {
+    font-size: 2.7rem;
+    margin: 1rem 0 1rem 0.5rem;
+  }
+}
+
+.frame-text {
+  background: #ff1437;
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: whitesmoke;
+  border: solid 2px #39ff14;
+}
+
+@media only screen and (max-width: 690px) {
+  .frame-text {
+    padding: 0.5rem;
+  }
+}
+
+.btn {
+  padding: 1rem;
+  margin: 1rem 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  outline: none;
+  color: #39ff14;
+  background: #ff1437;
+  border-radius: 7px;
+  border: none;
+  font-family: "Reggae One", cursive;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 690px) {
+  .btn {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+}
+
+#intro {
+  position: relative;
+  height: 100vh;
+  background-image: url(/Assets/IMG/cyber.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 100% 0 81% 19% / 23% 17% 83% 77%;
+  background-blend-mode: darken;
+}
+
+@media only screen and (max-width: 690px) {
+  #intro {
+    margin: 50px 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  #intro {
+    margin: 80px 0 0 0;
+  }
+}
+
+.intro-info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.intro-info h1 {
+  color: #39ff14;
+  font-weight: bold;
+  text-align: center;
+  font-size: 88px;
+  font-weight: 400;
+  font-family: "Reggae One", cursive;
+  font-family: "Reggae One", cursive;
+}
+
+.intro-info h3 {
+  font-weight: bold;
+  color: #39ff14;
+  text-align: center;
+  font-family: "Reggae One", cursive;
+  font-family: "Reggae One", cursive;
+  font-size: 28px;
+}
+
+.intro-info p {
+  color: #39ff14;
+  background: #ff1437;
+  border: solid 5px black;
+  width: 80%;
+  padding: 2rem;
+  border-radius: 5px;
+  font-family: "Reggae One", cursive;
+  font-family: "Reggae One", cursive;
+  text-align: center;
+}
+
+.intro-info a {
+  color: #ff1437;
+}
+
+.intro-info a:hover {
+  color: #39ff14;
+}
+
+.intro-info div {
+  padding: 0 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: center;
+}
+
+.intro-info div i {
+  margin: 0 1rem;
+}
+
+@media only screen and (max-width: 690px) {
+  .intro-info {
+    width: 100%;
+  }
+
+  .intro-info h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .intro-info h3 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  .intro-info p {
+    padding: 1rem;
+  }
+
+  .intro-info div {
+    padding: 0 1rem;
+  }
+
+  .intro-info a {
+    font-size: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .intro-info {
+    width: 100%;
+  }
+
+  .intro-info h1 {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+  }
+
+  .intro-info h3 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .intro-info p {
+    padding: 1rem;
+  }
+
+  .intro-info div {
+    padding: 0 1rem;
+  }
+
+  .intro-info a {
+    font-size: 0.5rem;
+  }
+}
+
+.icons a {
+  font-size: 20px;
+}
+
+#projects {
+  margin-top: 3rem;
+}
+
+.p-wrap {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.card {
+  padding: 1rem;
+  width: 47%;
+  height: 15em;
+  -webkit-box-shadow: 2px 5px 15px -1px rgba(0, 0, 0, 0.72);
+  box-shadow: 2px 5px 15px -1px rgba(0, 0, 0, 0.72);
+  border-radius: 5px;
+  margin: 1rem;
+}
+
+.card:hover .sec-info {
+  display: block;
+}
+
+@media only screen and (max-width: 690px) {
+  .card {
+    width: 95%;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .card {
+    width: 85%;
+    height: auto;
+    margin: 1rem auto;
+  }
+}
+
+.sec-info {
+  padding: 1rem;
+  display: none;
+  color: white;
+}
+
+.sec-info i {
+  color: #39ff14;
+  text-shadow: -1px -1px 20px #ff1437;
+  padding: 0 1.5rem;
+  font-size: 3rem;
+}
+
+.sec-info button {
+  font-size: 1.1rem;
+  margin: 1.5rem 0 0 1rem;
+}
+
+@media only screen and (max-width: 690px) {
+  .sec-info {
+    display: block;
+    padding: 0.2rem;
+  }
+  .sec-info i {
+    padding: 0.4rem 0.5rem;
+  }
+  .sec-info button {
+    font-size: 0.7rem;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .sec-info {
+    display: block;
+    padding: 0.2rem;
+  }
+  .sec-info i {
+    padding: 0.5rem 0.6rem;
+  }
+  .sec-info button {
+    font-size: 0.7rem;
+    margin: 0.3rem 0;
+  }
+}
+
+.card-title {
+  font-size: 2rem;
+  font-family: "Reggae One", cursive;
+  font-weight: 400;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  background: #ff1437;
+  border-radius: 10px;
+  padding: 0 0.5rem;
+  margin: 0 0.5rem;
+}
+
+@media only screen and (max-width: 690px) {
+  .card-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .card-title {
+    font-size: 1.8rem;
+  }
+}
+
+.t-bot {
+  background-image: url("../IMG/skate_shop_1.JPG");
+  background-position: center;
+  background-size: cover;
+}
+
+.gym {
+  background-image: url("../IMG/GYM-min.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.moto {
+  background-image: url("../IMG/Moto-min.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.events {
+  background-image: url("../IMG/events-min.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.tic {
+  background-image: url("../IMG/poke_1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.maga {
+  background-image: url("../IMG/maga-min.png");
+  background-position: center;
+  background-size: cover;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: black; /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url(/Assets/IMG/back.jpg);
+  background-color: black;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #ff1437;
+  border-radius: 10px;
+  width: 90%; /* Could be more or less, depending on screen size */
+  font-family: "Reggae One", cursive;
+}
+
+@media only screen and (max-width: 690px) {
+  .modal-content {
+    padding: 2rem;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .modal-content {
+    margin: 15% auto;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+}
+
+.modal-info {
+  margin-top: 3rem;
+  padding: 2rem 4rem 0 4rem;
+}
+
+.modal-info .built-with {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 70%;
+  justify-content: center;
+}
+
+.modal-info i {
+  padding: 0.5rem 0.6rem;
+  color: #39ff14;
+  font-size: 3rem;
+}
+
+.modal-info h3 {
+  color: #39ff14;
+}
+
+.modal-info p {
+  padding: 0 2rem;
+  text-align: justify;
+  width: 100%;
+  color: #ff1437;
+}
+
+.con-bui {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.modal-info button {
+  margin: 0.5rem 3rem 0 0;
+  width: 10em;
+}
+
+@media only screen and (max-width: 690px) {
+  .modal-info {
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .modal-info p {
+    width: 100%;
+    padding: 0;
+  }
+
+  .modal-info button {
+    margin: 0.5rem 1rem 0 0;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1440px) {
+  .modal-info {
+    margin-top: 3.5rem;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .modal-info p {
+    width: 100%;
+    padding: 0;
+  }
+
+  .modal-info h3 {
+    text-align: center;
+  }
+
+  .modal-info .built-with {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .modal-info button {
+    margin: 0.5rem 1rem 0 0;
+  }
+
+  .built_con {
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+/* The Close Button */
+.t-bot-close,
+.gym-close,
+.moto-close,
+.events-close,
+.tic-close,
+.maga-close {
+  color: #39ff14;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 690px) {
+  .t-bot-close,
+  .gym-close,
+  .moto-close,
+  .events-close,
+  .tic-close,
+  .maga-close {
+    font-size: 1rem;
+  }
+}
+
+.t-bot-close:hover,
+.t-bot-close:focus,
+.gym-close:hover,
+.gym-close:focus,
+.moto-close:hover,
+.moto-close:focus,
+.events-close:hover,
+.events-close:focus,
+.tic-close:hover,
+.tic-close:focus,
+.maga-close:hover,
+.maga-close:focus  {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: black;
+  margin: 0 auto;
+  width: 90%;
+  height: 27em;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 690px) {
+  .slideshow-container {
+    width: 100%;
+    height: 15em;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .slideshow-container {
+    width: 95%;
+    height: 20em;
+  }
+}
+
+/* Slides */
+.t-botSlides,
+.gymSlides,
+.motoSlides,
+.eventsSlides,
+.ticSlides,
+.magaSlides {
+  display: none;
+  text-align: center;
+}
+
+.t-botSlides img,
+.gymSlides img,
+.motoSlides img,
+.eventsSlides img,
+.ticSlides img, 
+.magaSlides img {
+  border-radius: 15px;
+  width: 100%;
+  height: 27em;
+}
+
+@media only screen and (max-width: 690px) {
+  .t-botSlides img,
+  .gymSlides img,
+  .motoSlides img,
+  .eventsSlides img,
+  .ticSlides img,
+  .magaSlides img {
+    height: 15em;
+  }
+}
+
+.t-botSlides h3,
+.gymSlides h3,
+.motoSlides h3,
+.eventsSlides h3,
+.ticSlides h3,
+.magaSlides h3 {
+  position: absolute;
+  top: 30px;
+  right: 100px;
+  color: #ff1437;
+  background: #39ff14;
+  z-index: 3;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  font-family: "Reggae One", cursive;
+}
+
+@media only screen and (max-width: 690px) {
+  .t-botSlides h3,
+  .gymSlides h3,
+  .motoSlides h3,
+  .eventsSlides h3,
+  .ticSlides h3,
+  .magaSlides h3 {
+    top: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .t-botSlides img,
+  .gymSlides img,
+  .motoSlides img,
+  .eventsSlides img,
+  .ticSlides img,
+  .magaSlides img {
+    height: 20em;
+  }
+  .t-botSlides h3,
+  .gymSlides h3,
+  .motoSlides h3,
+  .eventsSlides h3,
+  .ticSlides h3,
+  .magaSlides h3 {
+    top: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media only screen and (max-width: 690px) {
+  .prev,
+  .next {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .prev,
+  .next {
+    font-size: 1.6rem;
+  }
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+  position: relative;
+}
+
+.dot-container div {
+  position: absolute;
+  top: -2rem;
+  right: 50%;
+}
+
+@media only screen and (max-width: 690px) {
+  .dot-container div {
+    top: -1rem;
+    right: 10%;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .dot-container div {
+    top: -2.5rem;
+    right: 15%;
+  }
+}
+
+/* The dots/bullets/indicators */
+.t-bot-dot,
+.gym-dot,
+.moto-dot,
+.events-dot,
+.tic-dot,
+.maga-dot {
+  cursor: pointer;
+  height: 4rem;
+  width: 5rem;
+  margin: 0 2px;
+  border: none;
+  display: inline-block;
+  -webkit-transition: border 0.6s ease;
+  transition: border 0.6s ease;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 690px) {
+  .t-bot-dot,
+  .gym-dot,
+  .moto-dot,
+  .events-dot,
+  .tic-dot,
+  .maga-dot {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+
+/* Add a background color to the active dot/circle */
+.active,
+.t-bot-dot:hover,
+.gym-dot:hover,
+.moto-dot:hover,
+.events-dot:hover,
+.tic-dot:hover,
+.maga-dot:hover {
+  border: 2px solid #ff1437;
+}
+
+#about {
+  margin-top: 3rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.about-wrap {
+  padding: 1rem;
+  font-family: "Reggae One", cursive;
+  font-family: "Reggae One", cursive;
+}
+
+.about-wrap > div {
+  padding: 0 5rem;
+}
+
+.about-wrap p {
+  margin: 2rem 0;
+}
+
+.about-wrap a {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+@media only screen and (max-width: 690px) {
+  .about-wrap > div {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .about-wrap p {
+    margin: 1rem 0;
+  }
+  .about-wrap a {
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .about-wrap > div {
+    padding: 0 1rem;
+    margin: 1rem 0;
+  }
+  .about-wrap p {
+    margin: 2rem 0;
+  }
+  .about-wrap a {
+    margin: 1rem auto;
+  }
+}
+
+.skill-wrap {
+  text-align: center;
+  width: 25%;
+  height: 25em;
+  padding: 1rem;
+  margin: 2rem 0;
+  color: whitesmoke;
+  background: #ff1437;
+  border-radius: 10px;
+  font-family: "Reggae One", cursive;
+}
+
+.skill-wrap h3 {
+  font-family: "Reggae One", cursive;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #39ff14;
+}
+
+.skill-wrap p {
+  margin: 0.7rem 0.1rem;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 690px) {
+  .skill-wrap {
+    width: 90%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 0.3rem;
+    margin: 0.5rem;
+  }
+  .skill-wrap h3 {
+    font-size: 1rem;
+  }
+  .skill-wrap p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .skill-wrap {
+    width: 33%;
+  }
+}
+
+#contact {
+  background-image: url(/Assets/IMG/image-fo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 32% 55% 28% 67% / 63% 79% 20% 39%;
+  background-blend-mode: darken;
+}
+
+#contact h1 {
+  margin: 1rem 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#contact .form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 50%;
+  margin: 2rem 0 0 0;
+}
+
+#contact form {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: white;
+  font-family: "Reggae One", cursive;
+}
+
+#contact form label {
+  margin: 0.4rem;
+}
+
+#contact form input,
+#contact form select {
+  border: 1px solid #39ff14;
+  font-family: "Reggae One", cursive;
+  margin: 0.4rem;
+  padding: 0.2rem;
+  width: 26em;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  border: 1px solid #39ff14;
+  font-family: "Reggae One", cursive;
+  margin: 0.4rem;
+  padding: 0.2rem;
+  width: 26em;
+  height: 7em;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact form textarea:active,
+#contact form textarea:focus {
+  outline: none;
+  border: none;
+}
+
+#contact form button {
+  background: #ff1437;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 690px) {
+  #contact {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  #contact .form-wrap {
+    margin: 1rem 0 0 0;
+    width: 90%;
+  }
+  #contact form {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 2rem;
+  }
+  #contact form input,
+  #contact form select {
+    border: 1px solid #39ff14;
+    width: 20em;
+    margin: 0;
+    padding: 0.2rem;
+  }
+  #contact form textarea {
+    border: 1px solid #39ff14;
+    width: 20em;
+    height: 3em;
+    margin: 0;
+    padding: 0.2rem;
+  }
+  #contact form button {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  #contact {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  #contact .form-wrap {
+    margin: 1rem 0 0 0;
+    width: 100%;
+  }
+
+  #contact form {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contact form input,
+  #contact form select {
+    border: 1px solid #39ff14;
+    width: 30em;
+    margin: 0;
+    padding: 0;
+  }
+  #contact form textarea {
+    border: 1px solid #39ff14;
+    width: 30em;
+    height: 3em;
+    margin: 0;
+    padding: 0;
+  }
+  #contact form button {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+  }
+}
+
+.ani-wrap {
+  width: 50%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 0.5rem 1rem 0 0;
+}
+
+.ani-wrap .form-square {
+  background: transparent;
+  border: solid 2px #39ff14;
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+}
+
+@media only screen and (max-width: 690px) {
+  .ani-wrap {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 691px) and (max-width: 1000px) {
+  .ani-wrap {
+    display: none;
+  }
+}

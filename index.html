@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" integrity="sha384-eLT4eRYPHTmTsFGFAzjcCWX+wHfUInVWNm9YnwpiatljsZOwXtwV2Hh6sHM6zZD9" crossorigin="anonymous">
+    <title>Brian Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <img src="./Assets/IMG/Profile.jpeg" alt="profile" />
+      <a id="email" href="#intro">INTRO</a>
+      <a id="password" href="#projects">PROJECTS</a>
+      <a id="submit" href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <main>
+      <section id="intro">
+        <div class="intro-info">
+          <h1>Brian Sammit Cruz Rodriguez</h1>
+          <h3>Full Stack Software Developer</h3>
+          <p>
+            HELLO!! I am 23 years old web developer from Colombia, I enjoy
+            building UX/UI design, here you can check some of my recent work and
+            experience! If you like what you see and have a project you need
+            code, don’t hesitate and contact me.
+          </p>
+          <div class="icons">
+            <a href="https://github.com/BrianSammit" target="_blank">
+              <i class="fab fa-github-square fa-3x"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/brian-sammit-cruz/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin fa-3x"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div>
+          <h1 class="main-header">MY PORTFOLIO</h1>
+          <div class="d-flex p-wrap">
+            <div class="t-bot card">
+              <h2 class="card-title">LETS SKATE SHOP</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="fa-brands fa-react"></i>
+                  <i class="fas fa-road"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="t-botBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="t-botModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">LETS SKATE SHOP</h1>
+                  <span class="t-bot-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="t-botSlides">
+                    <img
+                      src="./Assets/IMG/skate_shop_1.JPG"
+                      alt="Funzo bot code"
+                    />
+                  </div>
+
+                  <div class="t-botSlides">
+                    <img src="./Assets/IMG/skate_shop_2.JPG" alt="Funso bot code" />
+                  </div>
+
+                  <div class="t-botSlides">
+                    <img src="./Assets/IMG/skate_shop_3.JPG" alt="Funzo bot code" />
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/skate_shop_1.JPG"
+                      class="t-bot-dot"
+                      onclick="currentSlide(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/skate_shop_2.JPG"
+                      class="t-bot-dot"
+                      onclick="currentSlide(2)"
+                    />
+                    <img
+                      src="./Assets/IMG/skate_shop_3.JPG"
+                      class="t-bot-dot"
+                      onclick="currentSlide(3)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    LETS SKATE SHOP is an app where you can schedule a skate to test it, created it in React, this single-page application uses an API build it in Ruby on Rails
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="fa-brands fa-react"></i>
+                        <i class="fas fa-road"></i>
+                        <i class="fab fa-github fa-3x"></i>
+                        <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://skate-store-react.herokuapp.com/"
+                        target="_blank"
+                        class="btn"
+                        >Live Demo <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a
+                        href="https://github.com/BrianSammit/book_appointment_react"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gym card">
+              <h2 class="card-title">Near GYM</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="fab fa-html5 fa-3x"></i>
+                  <i class="fab fa-sass fa-3x"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="gymBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="gymModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">Near GYM</h1>
+                  <span class="gym-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="gymSlides">
+                    <img
+                      src="./Assets/IMG/GYM-min.png"
+                      alt="GYM code"
+                    />
+                  </div>
+
+                  <div class="gymSlides">
+                    <img src="./Assets/IMG/GYM-Fu-min.png" alt="GYM code" />
+                  </div>
+
+                  <div class="gymSlides">
+                    <img src="./Assets/IMG/GYM-code-min.png" alt="GYM code" />
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlidesG(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlidesG(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/GYM-min.png"
+                      class="gym-dot"
+                      onclick="currentSlideG(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/GYM-Fu-min.png"
+                      class="gym-dot"
+                      onclick="currentSlideG(2)"
+                    />
+                    <img
+                      src="./Assets/IMG/GYM-code-min.png"
+                      class="gym-dot"
+                      onclick="currentSlideG(3)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    This project is a directory page that helps people to find a great 
+                    GYM wherever they want. This project it is only a view that is 
+                    responsive and shows how can it look on desktop, tablet and movile. 
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="fab fa-html5 fa-3x"></i>
+                        <i class="fab fa-sass fa-3x"></i>
+                        <i class="fab fa-github fa-3x"></i>
+                        <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://rawcdn.githack.com/BrianSammit/capstone/305099b1366f0feb6d97d2a277987dcbfbe95c8a/index.html"
+                        target="_blank"
+                        class="btn"
+                        >Live Demo <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a
+                        href="https://github.com/BrianSammit/HTMLcapstone"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="moto card">
+              <h2 class="card-title">MOTOcrazy!!</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="far fa-gem fa-3x"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="motoBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="motoModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">MOTOcrazy!!</h1>
+                  <span class="moto-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="motoSlides">
+                    <img
+                      src="./Assets/IMG/Moto-min.png"
+                      alt="moto code"
+                    />
+                  </div>
+
+                  <div class="motoSlides">
+                    <img src="./Assets/IMG/Moto-1-min.png" alt="moto code" />
+                  </div>
+
+                  <div class="motoSlides">
+                    <img src="./Assets/IMG/moto-code-min.png" alt="moto code" />
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlidesM(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlidesM(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/Moto-min.png"
+                      class="moto-dot"
+                      onclick="currentSlideM(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/Moto-1-min.png"
+                      class="moto-dot"
+                      onclick="currentSlideM(2)"
+                    />
+                    <img
+                      src="./Assets/IMG/moto-code-min.png"
+                      class="moto-dot"
+                      onclick="currentSlideM(3)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    This is the Ruby on Rails project that is based on 
+                    the lifestyle articles website. I personalize the 
+                    content to be a motorcycles articles. It is fully 
+                    functional, where you can create an account and 
+                    create and see the articles. 
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="far fa-gem fa-3x"></i>
+                        <i class="fab fa-github fa-3x"></i>
+                        <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://rocky-gorge-53007.herokuapp.com/users/sign_in"
+                        target="_blank"
+                        class="btn"
+                        >Live Demo <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a
+                        href="https://github.com/BrianSammit/Rails_capstone"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="events card">
+              <h2 class="card-title">Private events</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="far fa-gem fa-3x"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="eventsBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="eventsModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">Private events</h1>
+                  <span class="events-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="eventsSlides">
+                    <img
+                      src="./Assets/IMG/events-min.png"
+                      alt="events code"
+                    />
+                  </div>
+
+                  <div class="eventsSlides">
+                    <img src="./Assets/IMG/events-1-min.png" alt="events code" />
+                  </div>
+
+                  <div class="eventsSlides">
+                    <img src="./Assets/IMG/events-code-min.png" alt="events code" />
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlidesE(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlidesE(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/events-min.png"
+                      class="events-dot"
+                      onclick="currentSlideE(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/events-1-min.png"
+                      class="events-dot"
+                      onclick="currentSlideE(2)"
+                    />
+                    <img
+                      src="./Assets/IMG/events-code-min.png"
+                      class="events-dot"
+                      onclick="currentSlideE(3)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    This is the Ruby on Rails project where 
+                    you can create an event, create an account, 
+                    you can see other events you can invite 
+                    people to the events and attend to them.  
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="far fa-gem fa-3x"></i>
+                        <i class="fab fa-github fa-3x"></i>
+                        <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://github.com/karmaester/Private-Events"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tic card">
+              <h2 class="card-title">Cataloge of pokemons</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="fa-brands fa-react"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="ticBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="ticModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">Cataloge of pokemons</h1>
+                  <span class="tic-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="ticSlides">
+                    <img
+                      src="./Assets/IMG/poke_1.jpg"
+                      alt="tic code"
+                    />
+                  </div>
+
+                  <div class="ticSlides">
+                    <img src="./Assets/IMG/poke_2.jpg" alt="tic code" />
+                  </div>
+
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlidesA(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlidesA(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/poke_1.jpg"
+                      class="tic-dot"
+                      onclick="currentSlideA(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/poke_2.jpg"
+                      class="tic-dot"
+                      onclick="currentSlideA(2)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    Pokedex it's a catalogue of pokemons where you can find all the pokemons and see all pokemons individualy, In every pokemon info you can find Specie, Abilities, and Type. I build this project with React and Redux and PokeAPI.
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="fa-brands fa-react"></i>
+                  <i class="fab fa-github fa-3x"></i>
+                  <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://xenodochial-mcnulty-500e64.netlify.app/"
+                        target="_blank"
+                        class="btn"
+                        >Live Demo <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a
+                        href="https://github.com/BrianSammit/React-capstone"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="maga card">
+              <h2 class="card-title">Newsweek</h2>
+              <div class="sec-info">
+                <div>
+                  <i class="fab fa-html5 fa-3x"></i> 
+                  <i class="fab fa-css3-alt fa-3x"></i> 
+                  <i class="fab fa-sass fa-3x"></i>
+                  <i class="fab fa-bootstrap fa-3x"></i>
+                </div>
+                <!-- Trigger/Open The Modal -->
+                <button id="magaBtn" class="btn">SEE THE PROJECT</button>
+              </div>
+            </div>
+            <!-- The Modal tbot -->
+            <div id="magaModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="d-flex space-between">
+                  <h1 class="main-header">Newsweek</h1>
+                  <span class="maga-close">&times;</span>
+                </div>
+                <!-- Slideshow container -->
+
+                <div class="slideshow-container">
+                  <!-- Full-width slides/quotes -->
+                  <div class="magaSlides">
+                    <img
+                      src="./Assets/IMG/maga-min.png"
+                      alt="maga code"
+                    />
+                  </div>
+
+                  <div class="magaSlides">
+                    <img src="./Assets/IMG/maga-1-min.png" alt="maga code" />
+                  </div>
+
+                  <div class="magaSlides">
+                    <img src="./Assets/IMG/maga-code-min.png" alt="maga code" />
+                  </div>
+
+                  <!-- Next/prev buttons -->
+                  <a class="prev" onclick="plusSlidesMA(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlidesMA(1)">&#10095;</a>
+                </div>
+
+                <!-- Dots/bullets/indicators -->
+                <div class="d-flex justify-content-between dot-container">
+                  <div>
+                    <img
+                      src="./Assets/IMG/maga-min.png"
+                      class="maga-dot"
+                      onclick="currentSlideMA(1)"
+                    />
+                    <img
+                      src="./Assets/IMG/maga-1-min.png"
+                      class="maga-dot"
+                      onclick="currentSlideMA(2)"
+                    />
+                    <img
+                      src="./Assets/IMG/maga-code-min.png"
+                      class="maga-dot"
+                      onclick="currentSlideMA(3)"
+                    />
+                  </div>
+                </div>
+
+                <div class="d-column space-between modal-info">
+                  <p>
+                    The Newsweek page is a cloned page with only HTML, 
+                    CSS, and SASS that is responsive on mobile, tablet, 
+                    and desktop. All content move depending on the size 
+                    of the screen.
+
+                  </p>
+                  <div class="d-flex con-bui">
+                    <div class="d-column built_con">
+                      <div class="d-flex built-with">
+                        <h3>Built With</h3>
+                      </div>
+                      <div class="d-flex built-with">
+                        <i class="fab fa-html5 fa-3x"></i> 
+                        <i class="fab fa-css3-alt fa-3x"></i> 
+                        <i class="fab fa-sass fa-3x"></i>
+                        <i class="fab fa-bootstrap fa-3x"></i>
+                        <i class="fab fa-github fa-3x"></i>
+                        <i class="fab fa-git-alt fa-3x"></i>
+                      </div>
+                    </div>
+                    <div class="d-column built_source">
+                      <a
+                        href="https://rawcdn.githack.com/BrianSammit/Newsweek/8b4586f4f2e07379f581aceee8fbe6b92b45d2bb/index.html"
+                        target="_blank"
+                        class="btn"
+                        >Live Demo <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <a
+                        href="https://github.com/BrianSammit/Newsweek/tree/master"
+                        target="_blank"
+                        class="btn"
+                        >See source <i class="fab fa-github-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </section>
+      <section id="about">
+        <h1 class="main-header">ABOUT ME</h1>
+        <div class="about-wrap">
+          <p class="frame-text">
+            Dynamic and detail-oriented Web Developer with a knack 
+            for conceptualizing and delivering elegant, user-friendly 
+            solutions effectively and efficiently. Possesses a track 
+            record of developing web pages, Armed with an extensive 
+            understanding of front-end.
+          </p>
+          <a
+            href="https://docs.google.com/document/d/1CUp0cUWLUoJ91YJNMTXGWPt7SUkKOotnHD6iVHnTZnM/edit"
+            target="_blank"
+            class="btn btn-primary"
+          >
+           GET MY RESUME
+          </a>
+          <div class="d-flex space-between">
+            <div class="skill-wrap">
+              <h3>LANGUAGES</h3>
+              <div class="d-column">
+                <p><i class="fab fa-html5"></i> HTML 5</p>
+                <p><i class="fab fa-css3-alt"></i> CSS 3</p>
+                <p><i class="fab fa-sass"></i> SCSS</p>
+                <p><i class="far fa-gem"></i> Ruby</p>
+                <p><i class="fab fa-js-square"></i> JavaScript</p>
+              </div>
+            </div>
+            <div class="skill-wrap">
+              <h3>FRAMEWORKS</h3>
+              <div class="d-column">
+                <p><i class="fab fa-bootstrap"></i> Bootstrap</p>
+                <p><i class="fab fa-bootstrap"></i> Bulma SASS</p>
+                <p><i class="fas fa-road"></i> Ruby on Rails</p>
+                <p><i class="fa-brands fa-react"></i> React</p>
+                <p><i class="fa-brands fa-react"></i> Redux</p>
+              </div>
+            </div>
+            <div class="skill-wrap">
+              <h3>SKILLS</h3>
+              <div class="d-column">
+                <p><i class="fab fa-github-square"></i> Github</p>
+                <p><i class="fas fa-stream"></i> Git Flow</p>
+                <p><i class="fas fa-stream"></i> TDD</p>
+                <p><i class="fas fa-stream"></i> SQL</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h1 class="main-header">CONTACT</h1>
+        <div>
+          <div>
+            <form class="d-column" action="https://mailthis.to/Brian97"
+            method="POST" encType="multipart/form-data">
+              <div class="form-group">
+                <div class="d-column">
+                  <label for="formControlInput">Full name </label>
+                  <input type="text" class="form-control" placeholder="full name">
+                </div>
+              </div>
+              <div class="d-column">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control " id="exampleFormControlInput1" placeholder="example@gmail.com">
+              </div>
+              <div class="form-group">
+                <div class="d-column">
+                  <label for="exampleFormControlTextarea1">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </div>
+              <input type="hidden" name="_subject" value="Contact form submitted">
+              <input type="hidden" name="_after" value="https://briansammit.github.io/Portafolio/">
+              <input type="hidden" name="_honeypot" value="">
+              <button type="submit" value="submit" class="btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main> 
+    <script src="./Assets/JS/app.js"></script>
+  </body>
+</html>
