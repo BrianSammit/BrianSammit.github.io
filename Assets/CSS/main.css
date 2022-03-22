@@ -495,6 +495,7 @@ nav a:hover {
   color: #39ff14;
   text-shadow: -1px -1px 20px #ff1437;
   padding: 0 1.5rem;
+  font-size: 3rem;
 }
 
 .sec-info button {
@@ -557,7 +558,7 @@ nav a:hover {
 }
 
 .t-bot {
-  background-image: url("../IMG/Funzo.png");
+  background-image: url("../IMG/skate_shop_1.JPG");
   background-position: center;
   background-size: cover;
 }
@@ -581,7 +582,7 @@ nav a:hover {
 }
 
 .tic {
-  background-image: url("../IMG/tic-min.png");
+  background-image: url("../IMG/poke_1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -647,6 +648,7 @@ nav a:hover {
 .modal-info i {
   padding: 0.5rem 0.6rem;
   color: #39ff14;
+  font-size: 3rem;
 }
 
 .modal-info h3 {
